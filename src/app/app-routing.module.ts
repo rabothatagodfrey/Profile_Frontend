@@ -6,7 +6,7 @@ import { BuildingAreaComponent } from './pages/building-area/building-area.compo
 
 const routes: Routes = [
   { path: 'admin', component:HomeComponent  },
-  { path: 'profile',component:ProfilePageComponent},
+  { path: '',component:ProfilePageComponent},
   { path: 'build',component:BuildingAreaComponent}
 ];
 

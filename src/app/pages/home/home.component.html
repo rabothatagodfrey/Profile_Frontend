@@ -1,8 +1,64 @@
-<form>
-	<h2>Admin Login</h2>
-
-	<input type="text" name="username" class="text-field" placeholder="Username" />
-    <input type="password" name="password" class="text-field" placeholder="Password" />
+<body>
+	<img class="wave" src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/bg.svg">
+		</div>
+		<div class="login-content">
+			<form>
+				<img src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/avatar.svg">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+                  <div class="md-form form-sm">
+                    <input type="email" formControlName="email" class="form-control form-control-sm" mdbInput required>
+                    <label>Email</label>
+                  </div>
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+                  <div class="md-form form-sm">
+                    <input type="password" formControlName="password" class="form-control form-control-sm" mdbInput required>
+                    <label>Password</label>
+                  </div>
+            	   </div>
+            	</div>
+            	<a href="#">Forgot Password?</a>
+            	<input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div>
     
-  <a href=""><input type="button"  class="button" value="Log In" /></a>
-</form>
+</body>
+
+<!-- <form id="login__form" class="w-100" [formGroup]="loginForm">
+  <h4 class="form__header h4">Sign In</h4>
+
+  <div class="md-form form-sm">
+    <input type="email" formControlName="email" class="form-control form-control-sm" mdbInput required>
+    <label>Email</label>
+  </div>
+
+  <div class="md-form form-sm">
+    <input type="password" formControlName="password" class="form-control form-control-sm" mdbInput required>
+    <label>Password</label>
+  </div>
+
+  <div class="form-row text-center">
+    <div class="col-md-6">
+      <small>Forgot password? <a routerLink="/password-reset" class="text-info">Reset password</a></small>
+    </div>
+    <div class="col-md-6">
+      <small>Not a member yet? <a (click)="toggleAuthenticationForms()" class="text-info">Sign up</a></small>
+    </div>
+  </div>
+
+  <button mdbBtn type="submit" color="info" block="true" class="my-3" size="sm" (click)="login()">Sign in</button>
+</form> -->
